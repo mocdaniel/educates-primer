@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.41">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
     
     
       
@@ -847,23 +847,23 @@
 
 <h1 id="installing-the-educates-cli">Installing the Educates CLI</h1>
 <p>Next, we are going to install the Educates CLI from the available release binaries
-<a href="https://github.com/vmware-tanzu-labs/educates-training-platform/releases">on GitHub</a>.</p>
+<a href="https://github.com/educates/educates-training-platform/releases">on GitHub</a>.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Linux</label><label for="__tabbed_1_2">MacOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="c1"># For AMD64 / x86_64</span>
-<span class="o">[</span><span class="w"> </span><span class="k">$(</span>uname<span class="w"> </span>-m<span class="k">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>x86_64<span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>curl<span class="w"> </span>-sSLo<span class="w"> </span>educates<span class="w"> </span>https://github.com/vmware-tanzu-labs/educates-training-platform/releases/latest/download/educates-linux-amd64
+<span class="o">[</span><span class="w"> </span><span class="k">$(</span>uname<span class="w"> </span>-m<span class="k">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>x86_64<span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>curl<span class="w"> </span>-sSLo<span class="w"> </span>educates<span class="w"> </span>https://github.com/educates/educates-training-platform/releases/latest/download/educates-linux-amd64
 <span class="c1"># For ARM64</span>
-<span class="o">[</span><span class="w"> </span><span class="k">$(</span>uname<span class="w"> </span>-m<span class="k">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>aarch64<span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>curl<span class="w"> </span>-sSLo<span class="w"> </span>educates<span class="w"> </span>https://github.com/vmware-tanzu-labs/educates-training-platform/releases/latest/download/educates-linux-arm64
+<span class="o">[</span><span class="w"> </span><span class="k">$(</span>uname<span class="w"> </span>-m<span class="k">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>aarch64<span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>curl<span class="w"> </span>-sSLo<span class="w"> </span>educates<span class="w"> </span>https://github.com/educates/educates-training-platform/releases/latest/download/educates-linux-arm64
 chmod<span class="w"> </span>+x<span class="w"> </span>educates
 sudo<span class="w"> </span>mv<span class="w"> </span>educates<span class="w"> </span>/usr/local/bin/educates
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="c1"># For AMD64 / x86_64</span>
-<span class="o">[</span><span class="w"> </span><span class="k">$(</span>uname<span class="w"> </span>-m<span class="k">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>x86_64<span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>curl<span class="w"> </span>-sSLo<span class="w"> </span>educates<span class="w"> </span>https://github.com/vmware-tanzu-labs/educates-training-platform/releases/latest/download/educates-darwin-amd64
+<span class="o">[</span><span class="w"> </span><span class="k">$(</span>uname<span class="w"> </span>-m<span class="k">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>x86_64<span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>curl<span class="w"> </span>-sSLo<span class="w"> </span>educates<span class="w"> </span>https://github.com/educates/educates-training-platform/releases/latest/download/educates-darwin-amd64
 <span class="c1"># For ARM64</span>
-<span class="o">[</span><span class="w"> </span><span class="k">$(</span>uname<span class="w"> </span>-m<span class="k">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>arm64<span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>curl<span class="w"> </span>-sSLo<span class="w"> </span>educates<span class="w"> </span>https://github.com/vmware-tanzu-labs/educates-training-platform/releases/latest/download/educates-darwin-arm64
+<span class="o">[</span><span class="w"> </span><span class="k">$(</span>uname<span class="w"> </span>-m<span class="k">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>arm64<span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>curl<span class="w"> </span>-sSLo<span class="w"> </span>educates<span class="w"> </span>https://github.com/educates/educates-training-platform/releases/latest/download/educates-darwin-arm64
 chmod<span class="w"> </span>+x<span class="w"> </span>educates
 sudo<span class="w"> </span>mv<span class="w"> </span>educates<span class="w"> </span>/usr/local/bin/educates
 </code></pre></div>
